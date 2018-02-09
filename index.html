@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find the Distance</title>
+   <link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+<header>
+   <h1>Find the Distance</h1>
+</header>
+
+<div id="main">
+    <h2>Choose your starting and ending Airport: </h2>
+    <form id="user-input-area">
+    <label><span> Start: </span> </label>
+    <input id="starting-airport" class="form-control" placeholder="type here the starting airport..." type="text" />
+    <input id="starting-lat" class="form-control" type="hidden" />
+    <input id="starting-lng" class="form-control" type="hidden" />
+    <label> <span>End: </span>
+     </label>
+     <input id="ending-airport"  class="form-control" placeholder="type here the destination airport..." type="text" />
+     <input id="ending-lat" class="form-control" type="hidden" />
+     <input id="ending-lng" class="form-control" type="hidden" />
+
+    <label>
+     <button type="button" class="btn calculateDistance">Calculate Distance</button>
+   </label>
+
+    </form>
+   <div id="distance"><h2><span class="distance-number"></span><span class="unit"> Nautical Miles*</span></h2>
+   </div>
+
+    <div class="data-container" focus="starting-airport">
+       <ul id="all-airports">
+       </ul>
+    </div>
+    <div><h2 id="error">Some data is missing.</h2></div>
+
+
+    <div>*Answers are based on the Haversine formula and the longitude and lattitude values are collected from the internet.</div>
+</div>
+
+
+
+  <footer></footer>
+</body>
+    <script src="libraries/vanilla.js"></script>
+    <script src="src/js/model.js"></script>
+    <script src="src/js/controller.js"></script>
+    <script src="src/js/view.js"></script>
+      <script src="src/js/app.js"></script>
+</html>
