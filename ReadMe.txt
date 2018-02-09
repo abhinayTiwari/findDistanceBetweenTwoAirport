@@ -1,4 +1,4 @@
-Step 1: If you are reading this that means you have already extracted the zip file. Great Job!!
+Step 1: Download the whole project.
 
 Step2:  Click on index.html page.
 
